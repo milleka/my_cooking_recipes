@@ -1,0 +1,18 @@
+.element-visual {
+    height: 38vw;
+    background-image: url('../img/home-cook.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: white;
+        font-size: 4rem;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 0.5rem;
+        border-radius: 4px;
+    }
+}

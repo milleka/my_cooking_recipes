@@ -1,0 +1,39 @@
+name: "My theme"
+type: theme
+description: "Thème by camille chassaing"
+core_version_requirement: ^9 || ^10 || ^11
+base theme: claro
+
+regions:
+  page_top: "Page top"
+  header_top: "Header Top"
+  header_left: "Header Left"
+  header_middle: "Header Middle"
+  header_right: "Header Right"
+  header_bottom: "Header Bottom"
+  nav_main: "Main navigation"
+  nav_main_mobile: "Main navigation mobile"
+  highlighted: "Highlighted"
+  search_form: "Search form"
+  help: "Help"
+  content_top: "Content top"
+  sidebar_first: "Sidebar first"
+  content: "Main content"
+  sidebar_second: "Sidebar second"
+  content_bottom: "Content bottom"
+  footer_top: "Footer Top"
+  footer_left: "Footer Left"
+  footer_middle: "Footer Middle"
+  footer_right: "Footer Right"
+  footer_bottom: "Footer Bottom"
+  page_bottom: "Page bottom"
+  facet: "Facets"
+  offcanvas_sidebar: "Offcanvas Sidebar"
+  float: "Float"
+  hidden: "Hidden region for referenced blocks"
+
+
+libraries:
+  - my_theme/global-styling
+# Surcharges de bibliothèques
+

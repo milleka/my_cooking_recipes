@@ -1,0 +1,26 @@
+{
+  "name": "theme-my_theme",
+  "version": "0.1.0",
+  "description": "SASS compile|autoprefix|minimize and live-reload dev server using Browsersync for static HTML https://thinkdobecreate.com/articles/minimum-static-site-sass-setup/ ",
+  "main": "./",
+  "author": "5t3ph",
+  "scripts": {
+    "build:sass": "sass ./web/themes/my_theme/scss:./web/themes/my_theme/css",
+    "watch:sass": "sass --no-source-map --watch ./web/themes/my_theme/scss:./web/themes/my_theme/css",
+    "serve": "source ./.local.env && browser-sync --https --no-notify --no-online --no-ui --watch --files './' --port 8080 --reload-debounce --no-reload-on-restart https://$SITE_DOMAINE",
+    "start": "npm run watch:sass",
+    "sync": "npm-run-all --parallel watch:sass serve",
+    "postbuild": "postcss css/*.css -u autoprefixer cssnano -r"
+  },
+  "dependencies": {
+    "@mdi/font": ">=7",
+    "autoprefixer": ">=10",
+    "bootstrap": "5.2",
+    "bootswatch": ">=5",
+    "browser-sync": ">=2",
+    "cssnano": ">=5",
+    "npm-run-all": ">=4",
+    "postcss-cli": ">=9",
+    "sass": ">=1"
+  }
+}
